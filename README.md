@@ -1,6 +1,6 @@
 # PUI homework
 
-Deployed website: https://vaidehi-chotai.github.io/pui-hw/solution-hw0/
+Deployed website: https://vaidehi-chotai.github.io/pui-hw/
 
 Repository link: https://github.com/vaidehi-chotai/pui-hw
 
