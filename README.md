@@ -1,5 +1,6 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: https://vaidehi-chotai.github.io/pui-hw/solution-hw0/
 
-Repository link: `add the URL to this repository`
+Repository link: https://vaidehi-chotai.github.io/pui-hw/
+
