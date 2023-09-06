@@ -1,0 +1,234 @@
+body {
+    max-width: 1200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    width:400px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.header-line {
+    border: 2px solid black;
+    margin-bottom: 18px;
+}
+
+
+.nav-link {
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    display: block; /* source: https://linuxhint.com/center-links-css/#1*/
+    text-decoration: none; /* source: https://getcssscan.com/blog/how-to-remove-underline-from-link-css#:~:text=To%20remove%20underline%20from%20a%20link%20with%20CSS%2C%20add%20text,decoration%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,fixed%20color%20to%20the%20links.*/
+}
+
+/* https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
+#gallery-highlight span {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+#cart-highlight span {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.product-list img {
+    width:400px;
+    height:400px;
+    border: 3px solid black;
+    margin-bottom: 0px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+article {
+    margin-right:auto;
+    margin-left:auto;
+    width:35%;
+    padding-top: 8px;
+}
+
+/* source: https://www.w3schools.com/cssref/sel_hover.php */
+article:hover {
+    background-color: yellow;
+}
+
+/* source: https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
+article:hover span{
+    font-weight: bold;
+}
+
+.product-name {
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.price {
+    font-size: 25px;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.product-detail img {
+    width:600px;
+    height:600px;
+    border: 3px solid black;
+    margin-bottom: 0px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prod-detail-subheading {
+    text-align: left;
+    font-weight: lighter;
+    margin-right:auto;
+    margin-left:auto;
+    width:30%;
+}
+
+.glazing-option {
+    margin-right:auto;
+    margin-left:auto;
+    width:30%;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.pack-option {
+    margin-right:auto;
+    margin-left:auto;
+    width:30%;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+#glazing {
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-right: 150px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-weight: lighter;
+    border: 3px solid black;
+    background-color: white;
+}
+
+#pack-size {
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-right: 285px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-weight: lighter;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.total {
+    margin-right:auto;
+    margin-left:auto;
+    width:30%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.product-button {
+    margin: 30px; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: yellow;
+}
+
+
+.shopping-cart img {
+        width:200px;
+        height:200px;
+        border: 2px solid black;
+        margin-bottom: 5px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+.cart-item {
+        text-align: center;
+        margin-right:auto;
+        margin-left:auto;
+        width:40%;
+}
+
+.remove-button {
+    margin: 0px;
+    padding: 0px;
+}
+
+.item-description {
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: lighter;
+    margin:0;
+    padding:0;
+}
+
+.cart-price {
+    margin-right:auto;
+    margin-left:auto;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.checkout-line {
+    border: 2px solid black;
+    align-items: center;
+    width: 60%
+}
+
+.cart-button {
+    margin-left: 42.5%; 
+    padding-left: 47px;
+    padding-right: 47px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: yellow;
+    
+}
+
+
