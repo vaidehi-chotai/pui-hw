@@ -67,7 +67,6 @@ a {
 .galleryrow-one {
     display: flex;
     justify-content: center;
-    /* border: solid black; */
     gap: 5%; 
     flex-wrap: wrap;
 }
@@ -75,7 +74,6 @@ a {
 .galleryrow-two{
     display: flex;
     justify-content: center;
-    /* border: solid black; */
     gap: 5%;
     flex-wrap: wrap;
 }
@@ -112,7 +110,6 @@ article:hover span{
 .product-detail {
     display:flex;
     justify-content: right;
-    /* border: solid black; */
 }
 
 .product-detail img {
