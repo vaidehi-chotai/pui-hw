@@ -20,17 +20,17 @@ let total = 0;
 glazeDropdown.addEventListener('change', calculateGlaze);
 function calculateGlaze() {
     glazePrice = glazing[this.value];
-    caclulateTotal();
+    calculateTotal();
 }
 
 let packPrice = 1;
 packDropdown.addEventListener('change', calculatePack);
 function calculatePack() {
     packPrice = packing[this.value];
-    caclulateTotal();
+    calculateTotal();
 }
 
-function caclulateTotal() {
+function calculateTotal() {
     total = ((basePrice + glazePrice)*packPrice).toFixed(2);
     totalAmount.innerHTML = total;
 }
