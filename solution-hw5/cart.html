@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>Shopping Cart</title>
+  <script src="./js/rollsData.js" defer></script>
+  <script src="./js/cart.js" defer></script>
+</head>
+
+
+<body class="cart">
+  <div class="header">
+    <a href="./product_gallery.html"><img id="logo" src="../assets/logo/logo-01.svg" alt="logo" /></a>
+    <div class="menu">
+      <nav class="menu-links">
+        <a class="nav-link" href="./product_gallery.html"><span>PRODUCTS</span></a>
+        <a class="nav-link" id="yellow-highlight" href="./cart.html"><span>CART</span></a>
+      </nav>
+      <hr class="border-line">
+      <br>
+      <h1 class="heading">Shopping cart</h1>
+    </div>
+  </div>
+
+  <main>
+    <br>
+    <br>
+    <section class="shopping-cart">
+      <br>
+        <div class="cart-content">
+          <template id="roll-template">
+
+            <div class="cart-item">
+              <div class="cart-section">
+                <img id="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="original-cinnamon-roll" />
+                <p class="remove-button">Remove</p>
+              </div>
+              <br>
+              <div class="item-description">
+                <p id="roll-name">Original Cinnamon Roll</p>
+                <p id="roll-glazing">Glazing: Keep Original</p>
+                <p id="roll-pack">Pack Size: 1</p>
+              </div>
+              <div class="cart-price">
+                <p id="roll-price">$ 2.49</p>
+              </div>
+              <br>
+              <br>
+              <br>
+            </div>
+          </template>
+        </div>
+
+        <hr id="cart-line" class="border-line">
+
+        <div class="cart-item">
+          <br>
+          <div class="item-description">
+            <p id="total-word">Total</p>
+          </div>
+          <div class="cart-price">
+            <p id="total-price"></p>
+            <button class="cart-button" type="button">Checkout</button>
+          </div>
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+
+  </main>
+</body>
+
+</html>
