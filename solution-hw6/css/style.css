@@ -1,0 +1,298 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: solid black;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width:400px;
+    flex-grow: 0;
+    margin-top: 1%;
+    padding-left: 3%;
+    padding-top: 3%;
+}
+
+.menu {
+    flex-grow: 1;
+    padding-left: 2%;
+    color: black;
+    text-decoration: none; /* source: https://getcssscan.com/blog/how-to-remove-underline-from-link-css#:~:text=To%20remove%20underline%20from%20a%20link%20with%20CSS%2C%20add%20text,decoration%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,fixed%20color%20to%20the%20links.*/
+}
+
+.menu-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 22px;
+}
+
+.border-line {
+    border: 2px solid black;
+    width: 99.5%;
+}
+
+#cart-line {
+    margin-left: 30%;
+    width: 69.5%;
+} 
+
+/* https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
+#yellow-highlight span {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.heading {
+    color: black;
+    font-weight: lighter;
+    margin-top: 8%;
+}
+
+.product-list img {
+    width:285px;
+    height:285px;
+    border: 3px solid black;
+}
+
+
+.galleryrow-one {
+    display: flex;
+    justify-content: center;
+    gap: 5%; 
+    flex-wrap: wrap;
+}
+
+.galleryrow-two{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+article {
+    padding: 0.5%;
+    width: 300px;
+}
+
+/* source: https://www.w3schools.com/cssref/sel_hover.php */
+article:hover {
+    background-color: yellow;
+}
+
+/* source: https://stackoverflow.com/questions/14310154/how-do-i-set-a-background-color-for-the-width-of-text-not-the-width-of-the-enti */
+article:hover span{
+    font-weight: bold;
+}
+
+.product-name {
+    font-size: 22px;
+    text-decoration: underline;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.price {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.product-detail {
+    display:flex;
+    justify-content: right;
+}
+
+.product-detail img {
+    width:600px;
+    height:600px;
+    border: 3px solid black;
+    margin-left: 10%;
+}
+
+.prod-detail-subheading {
+    text-align: left;
+    font-weight: lighter;
+    margin-right:15%;
+    margin-left:auto;
+    width:60%;
+}
+
+.glazing-option {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:10%;
+    margin-right:auto;
+    margin-left:auto;
+    width:50%;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+.pack-option {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    margin-right:auto;
+    margin-left:auto;
+    width:50%;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+#glazing {
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    border: 3px solid black;
+    background-color: white;
+}
+
+#pack-size {
+    margin-top: 8px;
+    padding-left: 10px;
+    padding-right: 272px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.total {
+    margin-right:auto;
+    margin-left:auto;
+    width:60%;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 18%;
+}
+
+.product-button {
+    margin: 25px; 
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: yellow;
+}
+
+.cart-content {
+    padding: 0px;;
+    margin: 0px;
+    width: 65%;
+    margin-left: 35%;
+}
+
+.cart-item {
+    display: flex;
+    text-align: center; 
+    padding-right: 2%;
+}
+
+.cart-section {
+    margin-bottom: 2%;
+}
+
+.shopping-cart img {
+    width:200px;
+    height:200px;
+    border: 3px solid black;
+}
+
+.remove-button {
+    font-weight: bold;
+    float: left;
+    margin-left: 9%;
+    margin-top: 0%;
+    text-decoration: underline;
+    cursor:pointer
+}
+
+.item-description {
+    width: 55%;
+    align-self: center;
+    padding-left: 3%;
+}
+.item-description p {
+    text-align: left;
+    margin: 0px;
+    padding-top: 0px;
+    font-size: 23px;
+    font-weight: lighter;
+}
+
+.cart-price {
+    align-self: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    flex-grow: 1;
+    width: 15%;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 5%;
+}
+
+#total-word {
+    text-align: center;
+    margin-left: 102%;
+    font-size: 25px;
+    margin-bottom: 12%;
+}
+
+#total-price {
+    text-align: end;
+}
+
+.checkout {
+    width: 50%;
+    padding:2%;
+}
+
+.cart-button {
+    margin-left: 58%; 
+    padding-left: 49px;
+    padding-right: 49px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid black;
+    background-color: yellow;  
+}
+
+
