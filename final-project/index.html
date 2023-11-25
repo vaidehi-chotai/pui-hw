@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
-  <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
   <!-- <link href="${resolve('leaflet@1.2.0/dist/leaflet.css')}" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -34,7 +36,10 @@
             <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Conservation</a>
+            <a class="nav-link" href="#map-navigation">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./conservation.html">Conservation</a>
           </li>
       </div>
     </div>
@@ -49,6 +54,24 @@
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3000">
         <img src="./assets/home-carousel/carousel-1.jpeg" class="d-block w-100" alt="forest with fireflies">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="heading">The Firefly Map Project</h1>
+          <h6>Learn more about fireflies and help conserve these spectacular bioluminescent wonders</h6>
+          <p> ______________________ </p>
+          <p id="poem">
+            Ah, never of a summer night
+            <br>
+            Will life again be half as sweet
+            <br>
+            As in that country of delight
+            <br>
+            Where straying, staying, with happy feet,
+            <br>
+            We watched the fire-flies in the wheat.
+            <br>
+          </p>
+          <br>
+        </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
         <img src="./assets/home-carousel/carousel-2.jpg" class="d-block w-100" alt="forest with fireflies">
@@ -68,137 +91,60 @@
   </section>
 
 
-  <section class="map-container">
+  <section class="map-section" id="map-navigation">
     <br>
     <br>
+    <h1 id="map-heading" class="heading">Where to sight fireflies in the US</h1>
     <br>
-    <h1>Firefly sightings in the US</h1>
-    <br>
-    <div id="map">
-    </div>
+    <p id="map-subheading">Click on a green dot to learn more about the firefly watching site and the common species found there.</p>
+    <div class="map-container"> 
+      <div id="map">
+      </div>
+      <div id="locations">
+        <p>Click on the links below to learn more about the firefly watching site:</p>
+        <br>
+        <ol>
+          <li><a href="./allegheny.html">Allegheny National Forest, PA</a></li>
+          <li><a href="./allegheny.html">Congaree National Park, SC</a></li>
+          <li><a href="./allegheny.html">Drumlin Farms, Lincoln, MA</a></li>
+          <li><a href="./allegheny.html">Grandfather Moutain, NC</a></li>
+          <li><a href="./allegheny.html">Great Smoky Mountains National Park, TN</a></li>
+        </ol>
+      </div>
+    </div> 
     <br>
     <br>
     <br>
   </section>
 
-
-
-
-<!-- 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="./index.html">
-        <img src="./assets/logo/logo-3.png" alt="logo" width="30" height="30" class="d-inline-block align-text-center">
-        Firefly Map Project
-      </a>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Conservation</a>
-          </li>
-      </div>
-    </div>
-  </nav> -->
-
-
-
-
-      <!-- <a class="navbar-brand" href="./index.html">
-        <img src="./assets/logo/logo-3.png" alt="logo" width="30" height="30" class="d-inline-block align-text-center">
-        Firefly Map Project
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Conservation</a>
-          </li>
-      </div>
-    </div>
-  </nav> -->
-
-<!-- 
-  <div class="header">
-    <a href="./product_gallery.html"><img id="logo" src="../assets/logo/logo-01.svg" alt="logo" /></a>
-    <div class="menu">
-      <nav class="menu-links">
-        <a class="nav-link" id="yellow-highlight" href="./product_gallery.html"><span>PRODUCTS</span></a>
-        <a class="nav-link" href="./cart.html"><span>CART</span></a>
-      </nav>
-      <hr class="border-line">
-      <br>
-      <h1 class="heading">Our hand-made cinnamon rolls</h1>
-    </div>
-  </div>
-
-  <main>
+  <section class="footer">
     <br>
     <br>
-    <section class="product-list">
-      <div class="galleryrow-one">
-        <article>
-          <a href="./product_details.html?roll=Original">
-            <img src="../assets/products/original-cinnamon-roll.jpg" alt="original-cinnamon-roll" />
-            <p class="product-name"><span>Original cinnamon roll</span></p>
-            <p class="price">$ 2.49</p>
-          </a>
-        </article>
-
-        <article>
-          <a href="./product_details.html?roll=Apple">
-            <img src="../assets/products/apple-cinnamon-roll.jpg" alt="apple-cinnamon-roll" />
-            <p class="product-name"><span>Apple cinnamon roll</span></p>
-            <p class="price">$ 3.49</p>
-          </a>
-        </article>
-
-        <article>
-          <a href="./product_details.html?roll=Raisin">
-            <img src="../assets/products/raisin-cinnamon-roll.jpg" alt="raisin-cinnamon-roll" />
-            <p class="product-name"><span>Raisin cinnamon roll</span></p>
-            <p class="price">$ 2.99</p>
-          </a>
-        </article>
+    <div class="footer-text">
+      <div>
+        <p>
+          The Firefly Map Project at Carnegie Mellon University
+          <br>
+          fireflymapproject@cmu.edu
+        </p>
       </div>
-
-      <div class="galleryrow-two">
-        <article>
-          <a href="./product_details.html?roll=Walnut">
-            <img src="../assets/products/walnut-cinnamon-roll.jpg" alt="walnut-cinnamon-roll" />
-            <p class="product-name"><span>Walnut cinnamon roll</span></p>
-            <p class="price">$ 3.49</p>
-          </a>
-        </article>
-
-        <article>
-          <a href="./product_details.html?roll=Double-Chocolate">
-            <img src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="double-chocolate-cinnamon-roll" />
-            <p class="product-name"><span>Double-chocolate cinnamon roll</span></p>
-            <p class="price">$ 3.99</p>
-          </a>
-        </article>
-
-        <article>
-          <a href="./product_details.html?roll=Strawberry">
-            <img src="../assets/products/strawberry-cinnamon-roll.jpg" alt="strawberry-cinnamon-roll" />
-            <p class="product-name"><span>Strawberry cinnamon roll</span></p>
-            <p class="price">$ 3.99</p>
-          </a>
-        </article>
+      <div>
+        <p>
+          300 South Craig St. 
+          <br>
+          Pittsburgh, PA 15213
+        </p>
       </div>
-    </section>
-  </main>
- -->
-
+      <div>
+        <p>
+          Donate 
+          <br>
+          Firefly Conservation
+        </p>
+      </div>
+    </div>
+    <br>
+    <br>
+  </section>
 </body>
-
 </html>

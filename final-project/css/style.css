@@ -22,14 +22,68 @@
     height: 80px;
 }
 
+.heading{
+    font-family: 'Imprima', sans-serif;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+.image-title {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.location-title {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-family: 'Imprima', sans-serif;
+}
+
+.location-subtitle {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    font-family: 'Imprima', sans-serif;
+}
+
+#poem {
+    font-style: italic;
+}
+
+
+.carousel-caption:hover {
+    transform: scale(1.1);
+}
+
+.carousel-caption{
+    transition: transform 0.5s;
+}
+
+.map-section {
+    background-color: #1E1E1E;
+}
+
 .map-container {
     background-color: #1E1E1E;
+    display: flex;
 }
 
 #map {
     height: 500px;
-    margin-left:auto; 
-    margin-right:auto;
+    width: 60%;
+    border-style: solid;
+    border-color: black;
+    margin-left: 5%;
+    /* margin-right:10%; */
+}
+
+#map-subheading {
+    margin-left: 10%; 
 }
 
 h1 {
@@ -37,3 +91,109 @@ h1 {
     text-align: center;
 }
 
+p {
+    color: white;
+}
+
+#locations {
+    color: white;
+    margin-left: 4%;
+    align-self: center;
+    width: 25%;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}
+
+.leaflet-marker-icon:hover {
+    color: yellow;
+}
+
+.footer {
+    background-color: #292929;
+}
+
+.footer-text {
+    background-color: #292929;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.footer-text p {
+    color: white;
+}
+
+.firefly-info{
+    background-color: #131313;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+
+.card {
+    background-color: #292929;
+    max-width: 60%;
+    height: auto;
+    left: 22%;
+    color: white;
+    border-style: solid;
+    border-color: grey;
+    transition: transform 0.5s;
+}
+
+#card-img {
+    width: 100%;
+    height: 100%;
+}
+
+#species-name {
+    font-style: italic;
+}
+
+/* .collapsible-info {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+} */
+
+/* .active, .collapsible-info:hover {
+    background-color: #555;
+} */
+  
+/* .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+} */
+
+.accordion-item {
+    background-color: #292929;
+    color: white;
+}
+
+.instagram-vid {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#conservation-intro {
+    width: 40%;
+    color: white;
+}
