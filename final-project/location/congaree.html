@@ -17,8 +17,10 @@
 
 
 <body>
+  <!-- responsive navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
+      <!-- logo and website title that navigate to the home page -->
       <a class="navbar-brand" href="../home.html">
         <img src="../assets/logo/logo-white.png" alt="logo" width="30" height="30" class="d-inline-block align-text-center">
         Firefly Map Project
@@ -28,12 +30,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- link to navigate to the home page-->
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../home.html">Home</a>
           </li>
+          <!-- link to navigate to the interactive map on the home page-->
           <li class="nav-item">
             <a class="nav-link" href="../home.html#map-navigation">Map</a>
           </li>
+          <!-- firefly locations dropdown-->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Locations
@@ -50,6 +55,7 @@
               <li><a class="dropdown-item" href="../location/smokymount.html">Great Smoky Mountains National Park, TN</a></li>
             </ul>
           </li>
+          <!-- link to navigate to the conservation page -->
           <li class="nav-item">
             <a class="nav-link" href="../conservation/conservation.html">Conservation</a>
           </li>
@@ -57,17 +63,20 @@
     </div>
   </nav>
 
+  <!-- header image -->
   <section id="header-image" class="image-title">
     <img src="../assets/header-img/congaree.jpeg" class="responsive" alt="picture of forest with starry sky and fireflies and a title that reads allegheny national forest">
     <h1 class="location-title">Congaree National Park, SC</h1>
   </section>
 
+  <!-- main content section -->
   <section class="firefly-info">
     <br>
     <br>
     <h1 class="heading">Common firefly species found here</h1>
     <br>
     <br>
+    <!-- firefly species info card 1 -->
     <article class="species-1">
       <div class="card mb-3">
         <div class="row g-0">
@@ -89,9 +98,11 @@
             </div>
             </div>
           </div>
+          <!-- collapsible accordion element attached to card 1 -->
           <div class="accordion" id="accordion-1">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
+                <!-- button to collapse/expand accordian, its default state is collapsed -->
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Learn more about the Snappy Single Sync firefly
                 </button>
@@ -124,6 +135,7 @@
     <br>
   </section>
 
+  <!-- footer -->
   <section class="footer">
     <br>
     <br>

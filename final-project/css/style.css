@@ -2,6 +2,7 @@
     background-color: #2B4721;
 }
 
+/* setting font weight and color of firefly map project logo on navbar */
 .navbar-brand {
     font-weight:200;
     color: white;
@@ -21,58 +22,63 @@
     color: white;
 }
 
+/* dropdown item turns gray on click */
 .dropdown-item:focus {
     background-color: gray;
     color: black;
 } 
 
+/* if user is on a page that is listed in the dropdown, the background color of the item will be white to show users where they are on the webiste */
 .dropdown-item.active {
     background-color:white;
     color: black;
 }
 
+/* dropdown items turns grey when user hovers over them with their mouse */
 .dropdown-item.active:hover {
     background-color: gray;
     color: black;
 }
 
-.dropdown-item.active:focus {
-    background-color: gray;
-    color: black;
-}
-
+/* setting the color and border width of the line dividers between each dropdown item */
 .dropdown-divider {
     color: black;
     border-width: medium;
 }
 
+/* making default carousel previous button icon bigger for accessibility */
 .carousel-control-prev-icon 
 {
     width: 80px;
     height: 80px;
 }
-    
+
+/* making default carousel previous button icon bigger for accessibility */
 .carousel-control-next-icon
 {
     width: 80px;
     height: 80px;
 }
 
+/* setting font for all page and section headings */
 .heading{
     font-family: 'Imprima', sans-serif;
 }
 
+/* setting width of header images to 100% of screen size */
 .responsive {
     max-width: 100%;
     height: auto;
   }
 
+/* setting position and text alignment of div containing page titles */
 .image-title {
     position: relative;
     text-align: center;
     color: white;
 }
 
+/* setting position and font of page title text */
 .location-title {
     position: absolute;
     top:10%;
@@ -80,6 +86,7 @@
     font-family: 'Imprima', sans-serif;
 }
 
+/* setting position and font of page sub-title text */
 .location-subtitle {
     position: absolute;
     top: 20%;
@@ -87,14 +94,15 @@
     font-family: 'Imprima', sans-serif;
 }
 
+/* carousel caption on home page scales up by a factor of 1.1x on hover over a duration of 0.5 seconds */
 .carousel-caption:hover {
     transform: scale(1.1);
 }
-
 .carousel-caption{
     transition: transform 0.5s;
 }
 
+/* bg color of main body of all pages */
 .body-section {
     background-color: #1E1E1E;
 }
@@ -116,7 +124,6 @@
     border-style: solid;
     border-color: black;
     margin-left: 5%;
-    /* margin-right:10%; */
 }
 
 #map-subheading {
@@ -132,6 +139,7 @@ p {
     color: white;
 }
 
+/* style specifications for the location list on the right of the map on the home page */
 #locations {
     color: white;
     margin-left: 4%;
@@ -143,12 +151,9 @@ a {
     color: white;
 }
 
+/* links should turn grey on mouse hover */
 a:hover {
     color: gray;
-}
-
-.leaflet-marker-icon:hover {
-    color: yellow;
 }
 
 .footer {
@@ -171,11 +176,12 @@ a:hover {
     background-color: #131313;
 }
 
+/* carousel caption on home page scales up by a factor of 1.1x on hover */
 .card:hover {
     transform: scale(1.1);
 }
 
-
+/* style specifications for bootstrap card elements used throughout the website */
 .card {
     background-color: #292929;
     max-width: 60%;
@@ -192,17 +198,14 @@ a:hover {
     height: 100%;
 }
 
+/* scientific syntac requires species names to always be in italics */
 #species-name {
     font-style: italic;
 }
 
+/* style specifications for the bootstrap accordian elements that expand and hover on click */
 .accordion-item {
     background-color: #292929;
-    color: white;
-}
-
-#conservation-intro {
-    width: 40%;
     color: white;
 }
 
@@ -221,6 +224,7 @@ a:hover {
     margin-bottom: 0rem;
 }
 
+/* extinction fact box on conservation page */
 .fact-box {
     background-color: #b63737;
     width: 30%;
@@ -244,6 +248,7 @@ a:hover {
     width: 70%;
 }
 
+/* ensures all cards are the same heaight when viewed on different screen sizes */
 .card-body {
     align-items: stretch;
 }
