@@ -1,3 +1,14 @@
+
+let counter = setInterval(countingUp,40);
+let extinct = 0;
+function countingUp() {
+    let count = document.getElementById("firefly-counter");
+    count.innerHTML = ++extinct;
+    if (extinct === 44) {
+        clearInterval(counter);
+    }
+}
+
 let map = L.map("map").setView([37.6, -95.665], 4);
 
 L.tileLayer("https://api.maptiler.com/maps/ch-swisstopo-lbm-dark/{z}/{x}/{y}.png?key=Z0gbnQRplAOLdqiKaqEh", {
@@ -59,75 +70,4 @@ smokyMount.bindPopup('<a href="../location/smokymount.html">Great Smoky Mountain
 
 let mapDiv = document.getElementById("map");
 mapDiv.appendChild(map);
-
-function countUpAnimation(targetElement, endValue, duration) {
-    const startValue = 0;
-    const startTime = performance.now();
-
-    function updateNumber() {
-      const currentTime = performance.now();
-      const timeElapsed = currentTime - startTime;
-      const progress = Math.min(timeElapsed / duration, 1);
-      const animatedValue = Math.floor(progress * (endValue - startValue) + startValue);
-      targetElement.textContent = animatedValue;
-
-      if (timeElapsed < duration) {
-        requestAnimationFrame(updateNumber);
-      }
-    }
-
-    updateNumber();
-  }
-
-  // Set your target element and call the count-up function on window load
-  window.onload = function () {
-    const countContainer = document.getElementById('count-container');
-    const endValue = 100; // Set your desired end value
-    const duration = 3000; // Set the duration of the animation in milliseconds
-
-    countUpAnimation(countContainer, endValue, duration);
-  };
-
-
-  
-// let coll = document.getElementsByClassName("collapsible-info");
-// let i;
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//      content = this.parentNode.nextElementSibling;
-//     if (content.style.maxHeight){
-//       content.style.maxHeight = null;
-//     } else {
-//       content.style.maxHeight = content.scrollHeight + "px";
-//     }
-//   });
-// }
-
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
-
-// var btn = document.getElementsByClassName("collapse"); 
-
-// btn[0].addEventListener("click", function () { 
-// this.classList.toggle("active"); 
-// var content = this.nextElementSibling; 
-// if (content.style.display === "block") { 
-//     content.style.display = "none"; 
-// } else { 
-//     content.style.display = "block"; 
-// } 
-// }); 
 

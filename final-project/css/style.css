@@ -14,7 +14,6 @@
 
 .dropdown-menu {
     background-color: #1E1E1E;
-    /* border-color: black; */
 }
 
 .dropdown-item {
@@ -197,29 +196,6 @@ a:hover {
     font-style: italic;
 }
 
-/* .collapsible-info {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-} */
-
-/* .active, .collapsible-info:hover {
-    background-color: #555;
-} */
-  
-/* .content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-} */
-
 .accordion-item {
     background-color: #292929;
     color: white;
@@ -230,13 +206,31 @@ a:hover {
     color: white;
 }
 
-#count-container {
-    background-color: #292929;
+.firefly-info {
     color: white;
-    font-size: 24px;
-    font-weight: bold;
     text-align: center;
-  }
+}
+
+.firefly-info h3 {
+    font-style: italic;
+}
+
+.firefly-fact p {
+    margin-bottom: 0rem;
+}
+
+.fact-box {
+    background-color: #b63737;
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#firefly-counter {
+    font-size: 5.0rem;
+    padding: 0;
+    margin: 0;
+}
 
 .video-div {
     display: flex;
