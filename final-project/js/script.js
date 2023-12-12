@@ -1,5 +1,5 @@
 
-let counter = setInterval(countingUp,40);
+let counter = setInterval(countingUp,70);
 let extinct = 0;
 function countingUp() {
     let count = document.getElementById("firefly-counter");
