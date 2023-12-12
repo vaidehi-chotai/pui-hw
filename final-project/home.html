@@ -20,6 +20,7 @@
 
 
 <body>
+  <!-- responsive navbar -->
   <nav class="navbar navbar-expand-sm navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="./home.html">
@@ -60,16 +61,20 @@
     </div>
   </nav>
 
+  <!-- header carousel with three images  -->
   <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- line indicators at the bottom of the carousel to show which image in being presented at the moment -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
+      <!-- carousel image 1 with caption -->
       <div class="carousel-item active" data-bs-interval="3000">
         <img src="./assets/home-carousel/carousel-1.jpeg" class="d-block w-100" alt="forest with fireflies">
         <div class="carousel-caption d-none d-md-block">
+          <!-- image caption -->
           <h1 class="heading">The Firefly Map Project</h1>
           <h4>Learn more about fireflies and help conserve these spectacular bioluminescent wonders</h4>
           <br>
@@ -78,23 +83,28 @@
           <br>
         </div>
       </div>
+      <!-- carousel image 2 -->
       <div class="carousel-item" data-bs-interval="3000">
         <img src="./assets/home-carousel/carousel-2.jpg" class="d-block w-100" alt="forest with fireflies">
       </div>
+      <!-- carousel image 3 -->
       <div class="carousel-item" data-bs-interval="3000">
         <img src="./assets/home-carousel/carousel-3.jpg" class="d-block w-100" alt="forest with fireflies">
       </div>
     </div>
+    <!-- previous image button -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
+    <!-- next image button  -->
     <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
   </section>
 
+  <!-- poem section -->
   <section class="body-section">
     <br>
     <br>
@@ -114,6 +124,7 @@
     <br>
   </section>
 
+  <!-- map section -->
   <section class="body-section" id="map-navigation">
     <br>
     <h1 id="map-heading" class="heading">Where to sight fireflies in the US</h1>
@@ -139,6 +150,7 @@
     <br>
   </section>
 
+  <!-- footer -->
   <section class="footer">
     <br>
     <br>
