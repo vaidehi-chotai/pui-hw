@@ -3,7 +3,8 @@ let counter = setInterval(countingUp,70);
 let extinct = 0;
 function countingUp() {
     let count = document.getElementById("firefly-counter");
-    count.innerHTML = ++extinct;
+    extinct = extinct + 1;
+    count.innerHTML = extinct;
     if (extinct === 44) {
         clearInterval(counter);
     }

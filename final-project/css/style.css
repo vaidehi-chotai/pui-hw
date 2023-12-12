@@ -206,13 +206,15 @@ a:hover {
     color: white;
 }
 
-.firefly-info {
+.firefly-fact {
     color: white;
     text-align: center;
 }
 
 .firefly-info h3 {
     font-style: italic;
+    color: white;
+    text-align: center;
 }
 
 .firefly-fact p {
@@ -240,4 +242,8 @@ a:hover {
 .youtube-video {
     aspect-ratio: 16 / 9;
     width: 70%;
+}
+
+.card-body {
+    align-items: stretch;
 }
