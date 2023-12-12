@@ -1,13 +1,50 @@
 .navbar {
-    background-color: #819B14;
+    background-color: #2B4721;
 }
 
 .navbar-brand {
     font-weight:200;
+    color: white;
 }
 
 .nav-item {
     font-size: 1.1rem;
+    color: white;
+}
+
+.dropdown-menu {
+    background-color: #1E1E1E;
+    /* border-color: black; */
+}
+
+.dropdown-item {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.dropdown-item:focus {
+    background-color: gray;
+    color: black;
+} 
+
+.dropdown-item.active {
+    background-color:white;
+    color: black;
+}
+
+.dropdown-item.active:hover {
+    background-color: gray;
+    color: black;
+}
+
+.dropdown-item.active:focus {
+    background-color: gray;
+    color: black;
+}
+
+.dropdown-divider {
+    color: black;
+    border-width: medium;
 }
 
 .carousel-control-prev-icon 
@@ -51,11 +88,6 @@
     font-family: 'Imprima', sans-serif;
 }
 
-#poem {
-    font-style: italic;
-}
-
-
 .carousel-caption:hover {
     transform: scale(1.1);
 }
@@ -64,8 +96,14 @@
     transition: transform 0.5s;
 }
 
-.map-section {
+.body-section {
     background-color: #1E1E1E;
+}
+
+#poem {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
 }
 
 .map-container {
@@ -191,6 +229,14 @@ a:hover {
     width: 40%;
     color: white;
 }
+
+#count-container {
+    background-color: #292929;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
 
 .video-div {
     display: flex;
