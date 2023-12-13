@@ -78,21 +78,6 @@
     color: white;
 }
 
-/* setting position and font of page title text */
-.location-title {
-    position: absolute;
-    top:10%;
-    left: 5%;
-    font-family: 'Imprima', sans-serif;
-}
-
-/* setting position and font of page sub-title text */
-.location-subtitle {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    font-family: 'Imprima', sans-serif;
-}
 
 /* carousel caption on home page scales up by a factor of 1.1x on hover over a duration of 0.5 seconds */
 .carousel-caption:hover {
@@ -107,10 +92,16 @@
     background-color: #1E1E1E;
 }
 
+.intro-section {
+    color: white;
+    text-align: center;
+    background-color: #1E1E1E;
+}
+
 #poem {
     font-size: 1.1rem;
     font-style: italic;
-    text-align: center;
+    text-align: center:
 }
 
 .map-container {
@@ -127,7 +118,7 @@
 }
 
 #map-subheading {
-    margin-left: 10%; 
+    text-align: center;
 }
 
 h1 {
@@ -154,6 +145,10 @@ a {
 /* links should turn grey on mouse hover */
 a:hover {
     color: gray;
+}
+
+.image-title {
+    background-color: #131313;
 }
 
 .footer {
