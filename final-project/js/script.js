@@ -69,7 +69,3 @@ let smokyMount = L.circle([35.61, -83.49], {
 // binding/linking the circular marker to the page for that location 
 smokyMount.bindPopup('<a href="./location/smokymount.html">Great Smoky Mountains National Park, TN</a>');
 
-// adding the map object to the map container on the home page 
-let mapDiv = document.getElementById("map");
-mapDiv.appendChild(map);
-
